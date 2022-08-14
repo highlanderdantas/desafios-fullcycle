@@ -5,5 +5,5 @@ RUN go build -o hello hello.go
 
 
 FROM scratch
-COPY --from=builder /hello/hello /hello
+COPY --from=builder /desafio-1/hello/hello /hello
 ENTRYPOINT ["/hello"]
